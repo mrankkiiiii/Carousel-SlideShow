@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>SlideShow/Carousel</title>
+  </head>
+  <body>
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <div class="numberText">1/3</div>
+        <img
+          src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg"
+          alt=""
+        />
+        <div class="caption">First Slide</div>
+      </div>
+      <div class="slide fade">
+        <div class="numberText">2/3</div>
+        <img
+          src="https://cdn.pixabay.com/photo/2016/11/08/05/26/woman-1807533_960_720.jpg"
+          alt=""
+        />
+        <div class="caption">Second Slide</div>
+      </div>
+      <div class="slide fade">
+        <div class="numberText">3/3</div>
+        <img
+          src="https://cdn.pixabay.com/photo/2016/08/11/23/48/italy-1587287_960_720.jpg"
+          alt=""
+        />
+        <div class="caption">Third Slide</div>
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+      <a class="next" onclick="plusSlides(1)">&#10095</a>
+    </div>
+    <br />
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
